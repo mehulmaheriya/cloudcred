@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudCred - The Marketplace for Buying & Selling AI Credits</title>
+  <meta name="description" content="Buy premium AI & cloud compute credits at up to 60% off face value, or liquidate unused startup credits safely with guaranteed escrow and total anonymity.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span class="pulse-dot"></span>
+      <span>Over <strong>$4.2M+</strong> in compute credits traded safely with mutual NDA & escrow protection.</span>
+      <a href="#sell" class="top-bar-btn trigger-sell-modal">Sell Credits &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">C</div>
+        <span>CloudCred</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#marketplace">Browse Credits</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#security">Security & NDA</a>
+        <a href="#pricing">Calculators</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary trigger-sell-modal">Sell Credits</button>
+        <a href="#marketplace" class="btn btn-primary">Browse Marketplace</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#marketplace">Browse Credits</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#security">Security & Confidentiality</a>
+    <a href="#pricing">Pricing & Payouts</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact Us</a>
+    <button class="btn btn-primary trigger-sell-modal" style="width: 100%; margin-top: 1rem;">Sell Credits</button>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Instant settlement · NDA protected · Escrow guaranteed
+      </div>
+
+      <h1 class="hero-title">
+        The marketplace for buying & selling <span class="serif-highlight">AI credits</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Buy premium cloud & AI compute credits at a fraction of face value, or liquidate your unused allocation safely with guaranteed escrow payout and zero identity exposure.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary trigger-sell-modal">Sell Credits &rarr;</button>
+        <a href="#marketplace" class="btn btn-secondary">Browse Credits</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scrolling Marquee Belt (Full Width) -->
+  <div class="marquee-belt">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Verified accounts only</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Refund or replacement guarantee</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Read-only API key verification</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>All inquiries confidential</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Escrow-protected transfers</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Mutual NDA on every deal</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>24-48h average transfer</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Never shared with AI providers</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>OpenAI, AWS, GCP, Anthropic & Azure</span>
+        </div>
+      </div>
+
+      <!-- Duplicate Group for Infinite Loop -->
+      <div class="marquee-group" aria-hidden="true">
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Verified accounts only</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Refund or replacement guarantee</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Read-only API key verification</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>All inquiries confidential</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Escrow-protected transfers</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Mutual NDA on every deal</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>24-48h average transfer</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Never shared with AI providers</span>
+        </div>
+        <div class="marquee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>OpenAI, AWS, GCP, Anthropic & Azure</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Value Highlights Grid -->
+  <section class="value-props">
+    <div class="container">
+      <div class="value-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Direct Cash Payouts</h3>
+          <p>Turn unallocated credits from YC, Activate, or startup grants into immediate USDT, USDC, or bank wire.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Identity Protected</h3>
+          <p>All deals are anonymized with strict mutual NDAs. Your identity and company details are never revealed.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Escrow Guaranteed</h3>
+          <p>Funds are deposited into secure third-party escrow prior to account transfer, eliminating default risk.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>24-Hour Settlement</h3>
+          <p>Streamlined verification process ensures deals are closed and payouts released within 24 business hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Credit Marketplace Section -->
+  <section class="marketplace-section" id="marketplace">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-tag">LIVE LISTINGS</div>
+          <h2 class="section-title">Browse available credits</h2>
+        </div>
+        <button class="btn btn-primary trigger-sell-modal">Sell Your Credits &rarr;</button>
+      </div>
+
+      <!-- Search & Filters -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="tableSearchInput" placeholder="Search provider, amount, or program...">
+        </div>
+
+        <div class="category-tabs">
+          <button class="tab-btn active" data-category="all">All Credits</button>
+          <button class="tab-btn" data-category="openai">OpenAI</button>
+          <button class="tab-btn" data-category="aws">AWS Activate</button>
+          <button class="tab-btn" data-category="anthropic">Anthropic</button>
+          <button class="tab-btn" data-category="gcp">Google Cloud</button>
+          <button class="tab-btn" data-category="azure">Azure</button>
+        </div>
+      </div>
+
+      <!-- Data Table -->
+      <div class="table-container">
+        <table class="market-table" id="marketplaceTable">
+          <thead>
+            <tr>
+              <th>Provider</th>
+              <th>Credit Value</th>
+              <th>Discount</th>
+              <th>Expiry</th>
+              <th>Account Type</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-provider="openai">
+              <td>
+                <div class="provider-cell">
+                  <div class="provider-logo">OA</div>
+                  <span>OpenAI API Credit</span>
+                </div>
+              </td>
+              <td><strong>$25,000</strong></td>
+              <td><span class="discount-badge">45% OFF</span></td>
+              <td>Dec 2026</td>
+              <td>Full Account</td>
+              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
+              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
+            </tr>
+
+            <tr data-provider="aws">
+              <td>
+                <div class="provider-cell">
+                  <div class="provider-logo">AWS</div>
+                  <span>AWS Activate Portfolio</span>
+                </div>
+              </td>
+              <td><strong>$100,000</strong></td>
+              <td><span class="discount-badge">55% OFF</span></td>
+              <td>Nov 2027</td>
+              <td>Org Invite</td>
+              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
+              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
+            </tr>
+
+            <tr data-provider="anthropic">
+              <td>
+                <div class="provider-cell">
+                  <div class="provider-logo">ANT</div>
+                  <span>Anthropic Claude Credits</span>
+                </div>
+              </td>
+              <td><strong>$10,000</strong></td>
+              <td><span class="discount-badge">40% OFF</span></td>
+              <td>Aug 2026</td>
+              <td>API Key Access</td>
+              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
+              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
+            </tr>
+
+            <tr data-provider="gcp">
+              <td>
+                <div class="provider-cell">
+                  <div class="provider-logo">GCP</div>
+                  <span>Google Cloud for Startups</span>
+                </div>
+              </td>
+              <td><strong>$200,000</strong></td>
+              <td><span class="discount-badge">60% OFF</span></td>
+              <td>Jan 2028</td>
+              <td>Full Account</td>
+              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
+              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
+            </tr>
+
+            <tr data-provider="azure">
+              <td>
+                <div class="provider-cell">
+                  <div class="provider-logo">AZ</div>
+                  <span>Microsoft Founders Hub</span>
+                </div>
+              </td>
+              <td><strong>$150,000</strong></td>
+              <td><span class="discount-badge">50% OFF</span></td>
+              <td>Mar 2027</td>
+              <td>Full Account</td>
+              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
+              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
+            </tr>
+
+            <tr data-provider="openai">
+              <td>
+                <div class="provider-cell">
+                  <div class="provider-logo">OA</div>
+                  <span>OpenAI Scale Grant</span>
+                </div>
+              </td>
+              <td><strong>$5,000</strong></td>
+              <td><span class="discount-badge">35% OFF</span></td>
+              <td>No Expiry</td>
+              <td>API Access</td>
+              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
+              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
+            </tr>
+
+            <tr data-provider="gcp">
+              <td>
+                <div class="provider-cell">
+                  <div class="provider-logo">LM</div>
+                  <span>Lambda Labs GPU</span>
+                </div>
+              </td>
+              <td><strong>$50,000</strong></td>
+              <td><span class="discount-badge">45% OFF</span></td>
+              <td>Oct 2026</td>
+              <td>Org Access</td>
+              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
+              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
+            </tr>
+
+            <tr data-provider="aws">
+              <td>
+                <div class="provider-cell">
+                  <div class="provider-logo">RP</div>
+                  <span>RunPod GPU Compute</span>
+                </div>
+              </td>
+              <td><strong>$15,000</strong></td>
+              <td><span class="discount-badge">30% OFF</span></td>
+              <td>Jul 2027</td>
+              <td>Full Account</td>
+              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
+              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
+            </tr>
+
+            <tr data-provider="anthropic">
+              <td>
+                <div class="provider-cell">
+                  <div class="provider-logo">ANT</div>
+                  <span>Anthropic Enterprise</span>
+                </div>
+              </td>
+              <td><strong>$80,000</strong></td>
+              <td><span class="discount-badge">50% OFF</span></td>
+              <td>Dec 2027</td>
+              <td>API Key Access</td>
+              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
+              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
+            </tr>
+
+            <tr data-provider="other">
+              <td>
+                <div class="provider-cell">
+                  <div class="provider-logo">OT</div>
+                  <span>Other Cloud Providers</span>
+                </div>
+              </td>
+              <td><strong>Varies</strong></td>
+              <td><span class="discount-badge">On Request</span></td>
+              <td>Varies</td>
+              <td>On Request</td>
+              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
+              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Table Footer Belt -->
+        <div class="table-footer-belt">
+          <div class="table-footer-meta">
+            Showing <strong id="visibleCount">10</strong> listings &middot; Updated regularly &middot; Pricing on inquiry
+          </div>
+
+          <div class="table-footer-cta">
+            <span class="table-footer-prompt">Have credits to sell?</span>
+            <button class="btn btn-secondary trigger-sell-modal">Start Selling &rarr;</button>
+            <button class="btn btn-primary trigger-sell-modal">Custom inquiry &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+        <div class="section-tag">STREAMLINED PROCESS</div>
+        <h2 class="section-title">Execute a deal in 24 hours</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Fast, legal, and guaranteed escrow protection from inquiry to payout.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Submit Credit Details</h3>
+          <p>Fill out our simple form with your provider, credit balance, expiry date, and preferred contact method.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>NDA & Escrow Lock</h3>
+          <p>We execute a mutual legal NDA to protect your identity, then lock buyer funds safely into escrow.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Secure Transfer</h3>
+          <p>Our team verifies account credentials and facilitates smooth transfer according to provider guidelines.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h3>Instant Payout</h3>
+          <p>Escrow immediately releases your cash payout via USDT, USDC, or international wire transfer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security & Confidentiality Section -->
+  <section class="security-section" id="security">
+    <div class="container">
+      <div class="security-layout">
+        <div>
+          <div class="section-tag">SECURITY & ANONYMITY</div>
+          <h2 class="section-title">Keep deal confidential, anonymous & documented</h2>
+          <p style="color: var(--text-muted); margin-top: 0.75rem; line-height: 1.6;">
+            Selling startup credits can be sensitive. We enforce strict compliance protocols so your personal and company identity is fully shielded throughout the entire transaction.
+          </p>
+
+          <ul class="check-list">
+            <li class="check-item">
+              <div class="check-icon">✓</div>
+              <span><strong>Mutual Legal NDA:</strong> Signed digitally before any sensitive account details are exchanged.</span>
+            </li>
+            <li class="check-item">
+              <div class="check-icon">✓</div>
+              <span><strong>Zero Exposure Guarantee:</strong> Your real name and startup identity are never displayed publicly.</span>
+            </li>
+            <li class="check-item">
+              <div class="check-icon">✓</div>
+              <span><strong>Crypto & Wire Options:</strong> Receive funds via USDT, USDC, BTC, or direct bank transfer.</span>
+            </li>
+            <li class="check-item">
+              <div class="check-icon">✓</div>
+              <span><strong>100% Escrow Protection:</strong> Funds are pre-funded in escrow before you hand over any credentials.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Column with Workflow Card & Buttons -->
+        <div class="security-workflow-col">
+          <div class="timeline-card">
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1.5rem;">Verified Escrow Workflow</h3>
+
+            <div class="timeline-step">
+              <div class="timeline-badge">1</div>
+              <div class="timeline-content">
+                <h4>Seller Submits Info</h4>
+                <p>Details reviewed by CloudCred deal desk within 2 hours.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-badge">2</div>
+              <div class="timeline-content">
+                <h4>NDA & Escrow Created</h4>
+                <p>Mutual non-disclosure agreement signed, buyer deposits payment.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-badge">3</div>
+              <div class="timeline-content">
+                <h4>Verification & Handoff</h4>
+                <p>Credentials checked securely in a private, encrypted environment.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-badge">4</div>
+              <div class="timeline-content">
+                <h4>Funds Released</h4>
+                <p>Instant payout dispatched directly to seller wallet or bank.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Security Action Buttons directly below Workflow Box -->
+          <div class="security-actions">
+            <button class="btn btn-primary trigger-sell-modal">Sell Credits &rarr;</button>
+            <a href="#marketplace" class="btn btn-secondary">Browse Credits</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credit Value Calculator / Pricing Tiers -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+        <div class="section-tag">ESTIMATED PAYOUTS</div>
+        <h2 class="section-title">Credit payout tiers</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Clear payout rates with zero hidden commission fees.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div>
+            <h3>Starter Credits</h3>
+            <p style="font-size:0.875rem; color:var(--text-muted);">$5,000 - $25,000 Face Value</p>
+            <div class="pricing-payout">40% - 50% <span>payout rate</span></div>
+            <ul class="pricing-features">
+              <li>✓ OpenAI, Anthropic, GCP, AWS</li>
+              <li>✓ Mutual NDA Included</li>
+              <li>✓ 24h Escrow Settlement</li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary trigger-sell-modal" style="width:100%;">Submit Credits &rarr;</button>
+        </div>
+
+        <div class="pricing-card featured">
+          <div>
+            <h3>Growth Portfolio</h3>
+            <p style="font-size:0.875rem; color:var(--text-muted);">$25,000 - $100,000 Face Value</p>
+            <div class="pricing-payout">50% - 60% <span>payout rate</span></div>
+            <ul class="pricing-features">
+              <li>✓ Priority Buyer Matching</li>
+              <li>✓ Same-day Crypto Settlement</li>
+              <li>✓ Dedicated Deal Manager</li>
+            </ul>
+          </div>
+          <button class="btn btn-primary trigger-sell-modal" style="width:100%;">Submit Credits &rarr;</button>
+        </div>
+
+        <div class="pricing-card">
+          <div>
+            <h3>Enterprise Allocation</h3>
+            <p style="font-size:0.875rem; color:var(--text-muted);">$100,000+ Face Value</p>
+            <div class="pricing-payout">Up to 65% <span>payout rate</span></div>
+            <ul class="pricing-features">
+              <li>✓ Custom Escrow Agreements</li>
+              <li>✓ Full Account / Org Transfer</li>
+              <li>✓ Direct OTC Legal Support</li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary trigger-sell-modal" style="width:100%;">Submit Credits &rarr;</button>
+        </div>
+      </div>
+
+      <!-- Seller Banner -->
+      <div class="seller-banner">
+        <div class="seller-banner-content">
+          <h2>Got unallocated AI computing? Turn them into cash.</h2>
+          <p>Join hundreds of founders and developers who liquidated unused cloud credits effortlessly.</p>
+        </div>
+        <button class="btn btn-primary trigger-sell-modal" style="background:#FFFFFF; color:var(--text-dark); border-color:#FFFFFF;">Sell Your Credits Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+        <div class="section-tag">GOT QUESTIONS?</div>
+        <h2 class="section-title">Frequently asked questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is selling AI or cloud compute credits legal?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Yes. Credit transfers, account sales, and API key access arrangements are structured via private, legal contracts between willing buyer and seller entities under non-disclosure agreements.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does the escrow protection work?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Before you initiate any account transfer or supply API access credentials, the buyer must deposit the full agreed payout amount into our verified third-party escrow service. Once transfer is verified, escrow instantly releases your funds.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What payment methods can I receive?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            We support cryptocurrency payouts in USDT (TRC20 / ERC20), USDC, or BTC, as well as traditional SWIFT and Wire bank transfers directly to your corporate or personal account.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How quickly will I get matched with a buyer?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Due to high buyer demand for OpenAI, Anthropic, and AWS credits, over 80% of submitted listings receive verified buyer offers within 4 to 24 hours of submission.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Will my identity or company name be disclosed?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            No. All credit listings are completely anonymized on our marketplace. No third party or cloud provider is informed of your identity.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Direct Channels Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="section-tag">GET IN TOUCH</div>
+          <h2>Need custom credit arrangements?</h2>
+          <p>Reach out directly via Telegram or WhatsApp for instant assistance, high-volume OTC deals, or custom inquiries.</p>
+
+          <div class="direct-channels">
+            <a href="https://wa.me/?text=Hi%20CloudCred,%20I'm%20interested%20in%20buying/selling%20AI%20credits" target="_blank" class="channel-card">
+              <div class="channel-icon whatsapp">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <div>
+                <div>WhatsApp Direct Desk</div>
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-weight:400;">Instant chat with deal specialist</span>
+              </div>
+            </a>
+
+            <a href="https://t.me/cloudcred" target="_blank" class="channel-card">
+              <div class="channel-icon telegram">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </div>
+              <div>
+                <div>Telegram Official Support</div>
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-weight:400;">@cloudcred on Telegram</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.25rem; font-weight:700; margin-bottom: 1rem;">Send an Inquiry</h3>
+          <form id="bottomContactForm">
+            <div class="form-group">
+              <label for="contactName">Your Name or Alias *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="e.g. Alex" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactRole">Account / Company Type *</label>
+              <select id="contactRole" class="form-control" required>
+                <option value="" disabled selected>Select option</option>
+                <option value="Credit Seller">I want to Sell AI Credits</option>
+                <option value="Credit Buyer">I want to Buy AI Credits</option>
+                <option value="Broker / OTC Agent">OTC Broker / Partner</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message *</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Tell us about the credit provider, amount, or specific inquiry..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">C</div>
+            <span>CloudCred</span>
+          </a>
+          <p>The leading anonymous, escrow-protected marketplace for buying and selling unallocated AI compute credits.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Marketplace</h4>
+          <ul>
+            <li><a href="#marketplace">OpenAI Credits</a></li>
+            <li><a href="#marketplace">AWS Activate</a></li>
+            <li><a href="#marketplace">Anthropic Claude</a></li>
+            <li><a href="#marketplace">Google Cloud</a></li>
+            <li><a href="#marketplace">Azure Hub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#security">Security & NDA</a></li>
+            <li><a href="#pricing">Payout Tiers</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Desk</h4>
+          <ul>
+            <li><a href="https://wa.me/?text=Hi%20CloudCred" target="_blank">WhatsApp Desk</a></li>
+            <li><a href="https://t.me/cloudcred" target="_blank">Telegram Support</a></li>
+            <li><a href="#sell" class="trigger-sell-modal">Sell Your Credits</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 CloudCred.store. All rights reserved. Strict NDA & Escrow protected.</div>
+        <div style="display:flex; gap:1.25rem;">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="#" class="trigger-sell-modal">Mutual NDA Template</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SELL CREDITS MODAL DIALOG (Matches Screenshot 2 Pixel-Perfect) -->
+  <div class="modal-backdrop" id="sellModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <div class="modal-subtitle-tag">SELL CREDITS</div>
+          <h2 class="modal-title">Submit your credits</h2>
+        </div>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <!-- Guarantee Checklist Box -->
+      <div class="modal-guarantee-box">
+        <div class="guarantee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Mutual NDA
+        </div>
+        <div class="guarantee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Identity protected
+        </div>
+        <div class="guarantee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Paid in crypto
+        </div>
+        <div class="guarantee-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Escrow-protected
+        </div>
+      </div>
+
+      <!-- Form Inputs -->
+      <form id="sellCreditForm">
+        <div class="form-group">
+          <label for="creditProvider">Credit provider *</label>
+          <select id="creditProvider" class="form-control" required>
+            <option value="" disabled selected>Select provider</option>
+            <option value="OpenAI">OpenAI API</option>
+            <option value="AWS Activate">AWS Activate</option>
+            <option value="Anthropic">Anthropic Claude</option>
+            <option value="Google Cloud">Google Cloud (GCP)</option>
+            <option value="Microsoft Azure">Microsoft Founders Hub</option>
+            <option value="RunPod">RunPod / GPU Compute</option>
+            <option value="Lambda Labs">Lambda Labs</option>
+            <option value="Other">Other Provider</option>
+          </select>
+        </div>
+
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label for="creditValue">Credit value *</label>
+            <select id="creditValue" class="form-control" required>
+              <option value="" disabled selected>Select value</option>
+              <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+              <option value="$5,000 - $25,000">$5,000 - $25,000</option>
+              <option value="$25,000 - $100,000">$25,000 - $100,000</option>
+              <option value="$100,000+">$100,000+</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="accountType">Account type *</label>
+            <select id="accountType" class="form-control" required>
+              <option value="" disabled selected>Select type</option>
+              <option value="Full Account Transfer">Full account transfer</option>
+              <option value="API Key Access">API key access</option>
+              <option value="Org Invite">Organization invite</option>
+              <option value="Other">Other type</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="grantProgramme">Grant programme <span style="font-weight:400; color:var(--text-muted);">(optional)</span></label>
+          <select id="grantProgramme" class="form-control">
+            <option value="" disabled selected>Select programme</option>
+            <option value="Y Combinator">Y Combinator</option>
+            <option value="AWS Activate Portfolio">AWS Activate Portfolio</option>
+            <option value="Google for Startups">Google for Startups</option>
+            <option value="Microsoft Founders Hub">Microsoft Founders Hub</option>
+            <option value="Anthropic Startup">Anthropic Startup Program</option>
+            <option value="Other / Direct Grant">Other / Direct Grant</option>
+          </select>
+          <div class="form-hint">Helps us match you with the right buyer faster.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="creditExpiry">Credit expiry <span style="font-weight:400; color:var(--text-muted);">(optional)</span></label>
+          <input type="text" id="creditExpiry" class="form-control" placeholder="e.g. Dec 2026, No expiry, Not sure">
+        </div>
+
+        <div class="form-group">
+          <label for="userContact">Your contact (email or WhatsApp) *</label>
+          <input type="text" id="userContact" class="form-control" placeholder="you@email.com or +91 9876543210" required>
+          <div class="form-hint">We reply within a few hours. Your details stay strictly private.</div>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="ndaCheckbox" checked>
+          <label for="ndaCheckbox">I'd like a mutual NDA before we proceed</label>
+        </div>
+
+        <button type="submit" class="btn-submit-modal">Submit my credits &rarr;</button>
+
+        <div class="modal-footer-note">
+          No commitment required. Your identity and credit details are never shared with AI providers or third parties.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toastNotification">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMessage">Inquiry submitted successfully!</span>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
