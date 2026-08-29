@@ -201,6 +201,20 @@ textarea {
   letter-spacing: -0.02em;
 }
 
+.logo-img {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-logo-img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .logo-icon {
   width: 32px;
   height: 32px;

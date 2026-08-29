@@ -16,29 +16,26 @@
     <div class="container top-bar-content">
       <span class="pulse-dot"></span>
       <span>Over <strong>$4.2M+</strong> in compute credits traded safely with mutual NDA & escrow protection.</span>
-      <a href="#sell" class="top-bar-btn trigger-sell-modal">Sell Credits &rarr;</a>
+      <a href="#marketplace" class="top-bar-btn trigger-sell-modal">Buy Credits &rarr;</a>
     </div>
   </div>
 
   <!-- Header Navigation -->
   <header class="header">
     <div class="container nav-container">
-      <a href="#" class="logo">
-        <div class="logo-icon">C</div>
-        <span>CloudCred</span>
+      <a href="#" class="logo" aria-label="CloudCred Home">
+        <img src="logo.png" alt="CloudCred" class="logo-img">
       </a>
 
       <nav class="nav-links">
         <a href="#marketplace">Browse Credits</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#security">Security & NDA</a>
-        <a href="#pricing">Calculators</a>
         <a href="#faq">FAQ</a>
       </nav>
 
       <div class="nav-actions">
-        <button class="btn btn-secondary trigger-sell-modal">Sell Credits</button>
-        <a href="#marketplace" class="btn btn-primary">Browse Marketplace</a>
+        <button class="btn btn-primary trigger-sell-modal">Buy Credits</button>
         <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -58,7 +55,7 @@
     <a href="#pricing">Pricing & Payouts</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">Contact Us</a>
-    <button class="btn btn-primary trigger-sell-modal" style="width: 100%; margin-top: 1rem;">Sell Credits</button>
+    <button class="btn btn-primary trigger-sell-modal" style="width: 100%; margin-top: 1rem;">Buy Credits</button>
   </div>
 
   <!-- Hero Section -->
@@ -78,7 +75,7 @@
       </p>
 
       <div class="hero-actions">
-        <button class="btn btn-primary trigger-sell-modal">Sell Credits &rarr;</button>
+        <button class="btn btn-primary trigger-sell-modal">Buy Credits &rarr;</button>
         <a href="#marketplace" class="btn btn-secondary">Browse Credits</a>
       </div>
 
@@ -216,7 +213,7 @@
           <div class="section-tag">LIVE LISTINGS</div>
           <h2 class="section-title">Browse available credits</h2>
         </div>
-        <button class="btn btn-primary trigger-sell-modal">Sell Your Credits &rarr;</button>
+        <button class="btn btn-primary trigger-sell-modal">Buy Credits &rarr;</button>
       </div>
 
       <!-- Search & Filters -->
@@ -229,10 +226,7 @@
         <div class="category-tabs">
           <button class="tab-btn active" data-category="all">All Credits</button>
           <button class="tab-btn" data-category="openai">OpenAI</button>
-          <button class="tab-btn" data-category="aws">AWS Activate</button>
-          <button class="tab-btn" data-category="anthropic">Anthropic</button>
-          <button class="tab-btn" data-category="gcp">Google Cloud</button>
-          <button class="tab-btn" data-category="azure">Azure</button>
+          <button class="tab-btn" data-category="aws">AWS Credit</button>
         </div>
       </div>
 
@@ -260,7 +254,7 @@
               </td>
               <td><strong>$25,000</strong></td>
               <td><span class="discount-badge">45% OFF</span></td>
-              <td>Dec 2026</td>
+              <td><span class="dynamic-expiry">Aug 2027</span></td>
               <td>Full Account</td>
               <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
               <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
@@ -270,88 +264,13 @@
               <td>
                 <div class="provider-cell">
                   <div class="provider-logo">AWS</div>
-                  <span>AWS Activate Portfolio</span>
-                </div>
-              </td>
-              <td><strong>$100,000</strong></td>
-              <td><span class="discount-badge">55% OFF</span></td>
-              <td>Nov 2027</td>
-              <td>Org Invite</td>
-              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
-              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
-            </tr>
-
-            <tr data-provider="anthropic">
-              <td>
-                <div class="provider-cell">
-                  <div class="provider-logo">ANT</div>
-                  <span>Anthropic Claude Credits</span>
-                </div>
-              </td>
-              <td><strong>$10,000</strong></td>
-              <td><span class="discount-badge">40% OFF</span></td>
-              <td>Aug 2026</td>
-              <td>API Key Access</td>
-              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
-              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
-            </tr>
-
-            <tr data-provider="gcp">
-              <td>
-                <div class="provider-cell">
-                  <div class="provider-logo">GCP</div>
-                  <span>Google Cloud for Startups</span>
-                </div>
-              </td>
-              <td><strong>$200,000</strong></td>
-              <td><span class="discount-badge">60% OFF</span></td>
-              <td>Jan 2028</td>
-              <td>Full Account</td>
-              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
-              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
-            </tr>
-
-            <tr data-provider="azure">
-              <td>
-                <div class="provider-cell">
-                  <div class="provider-logo">AZ</div>
-                  <span>Microsoft Founders Hub</span>
-                </div>
-              </td>
-              <td><strong>$150,000</strong></td>
-              <td><span class="discount-badge">50% OFF</span></td>
-              <td>Mar 2027</td>
-              <td>Full Account</td>
-              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
-              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
-            </tr>
-
-            <tr data-provider="openai">
-              <td>
-                <div class="provider-cell">
-                  <div class="provider-logo">OA</div>
-                  <span>OpenAI Scale Grant</span>
+                  <span>AWS Credits</span>
                 </div>
               </td>
               <td><strong>$5,000</strong></td>
-              <td><span class="discount-badge">35% OFF</span></td>
-              <td>No Expiry</td>
-              <td>API Access</td>
-              <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
-              <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
-            </tr>
-
-            <tr data-provider="gcp">
-              <td>
-                <div class="provider-cell">
-                  <div class="provider-logo">LM</div>
-                  <span>Lambda Labs GPU</span>
-                </div>
-              </td>
-              <td><strong>$50,000</strong></td>
-              <td><span class="discount-badge">45% OFF</span></td>
-              <td>Oct 2026</td>
-              <td>Org Access</td>
+              <td><span class="discount-badge">50% OFF</span></td>
+              <td><span class="dynamic-expiry">Aug 2027</span></td>
+              <td>Full Account</td>
               <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
               <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
             </tr>
@@ -359,44 +278,44 @@
             <tr data-provider="aws">
               <td>
                 <div class="provider-cell">
-                  <div class="provider-logo">RP</div>
-                  <span>RunPod GPU Compute</span>
+                  <div class="provider-logo">AWS</div>
+                  <span>AWS Credits</span>
                 </div>
               </td>
-              <td><strong>$15,000</strong></td>
-              <td><span class="discount-badge">30% OFF</span></td>
-              <td>Jul 2027</td>
+              <td><strong>$10,000</strong></td>
+              <td><span class="discount-badge">50% OFF</span></td>
+              <td><span class="dynamic-expiry">Aug 2027</span></td>
               <td>Full Account</td>
               <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
               <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
             </tr>
 
-            <tr data-provider="anthropic">
+            <tr data-provider="aws">
               <td>
                 <div class="provider-cell">
-                  <div class="provider-logo">ANT</div>
-                  <span>Anthropic Enterprise</span>
+                  <div class="provider-logo">AWS</div>
+                  <span>AWS Credits</span>
                 </div>
               </td>
-              <td><strong>$80,000</strong></td>
+              <td><strong>$25,000</strong></td>
               <td><span class="discount-badge">50% OFF</span></td>
-              <td>Dec 2027</td>
-              <td>API Key Access</td>
+              <td><span class="dynamic-expiry">Aug 2027</span></td>
+              <td>Full Account</td>
               <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
               <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
             </tr>
 
-            <tr data-provider="other">
+            <tr data-provider="aws">
               <td>
                 <div class="provider-cell">
-                  <div class="provider-logo">OT</div>
-                  <span>Other Cloud Providers</span>
+                  <div class="provider-logo">AWS</div>
+                  <span>AWS Credits</span>
                 </div>
               </td>
-              <td><strong>Varies</strong></td>
-              <td><span class="discount-badge">On Request</span></td>
-              <td>Varies</td>
-              <td>On Request</td>
+              <td><strong>$100,000</strong></td>
+              <td><span class="discount-badge">50% OFF</span></td>
+              <td><span class="dynamic-expiry">Aug 2027</span></td>
+              <td>Full Account</td>
               <td><span class="status-badge"><span class="status-dot"></span> Available</span></td>
               <td><button class="btn btn-secondary trigger-sell-modal" style="padding:0.4rem 0.8rem; font-size:0.8rem;">Buy / Inquire</button></td>
             </tr>
@@ -406,12 +325,12 @@
         <!-- Table Footer Belt -->
         <div class="table-footer-belt">
           <div class="table-footer-meta">
-            Showing <strong id="visibleCount">10</strong> listings &middot; Updated regularly &middot; Pricing on inquiry
+            Showing <strong id="visibleCount">5</strong> listings &middot; Updated regularly &middot; Pricing on inquiry
           </div>
 
           <div class="table-footer-cta">
             <span class="table-footer-prompt">Have credits to sell?</span>
-            <button class="btn btn-secondary trigger-sell-modal">Start Selling &rarr;</button>
+            <button class="btn btn-secondary trigger-sell-modal">Buy Credits &rarr;</button>
             <button class="btn btn-primary trigger-sell-modal">Custom inquiry &rarr;</button>
           </div>
         </div>
@@ -425,32 +344,32 @@
       <div style="text-align: center; max-width: 650px; margin: 0 auto;">
         <div class="section-tag">STREAMLINED PROCESS</div>
         <h2 class="section-title">Execute a deal in 24 hours</h2>
-        <p style="color: var(--text-muted); margin-top: 0.5rem;">Fast, legal, and guaranteed escrow protection from inquiry to payout.</p>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Fast, legal, and guaranteed protection from inquiry to payout.</p>
       </div>
 
       <div class="steps-grid">
         <div class="step-card">
           <div class="step-number">1</div>
-          <h3>Submit Credit Details</h3>
-          <p>Fill out our simple form with your provider, credit balance, expiry date, and preferred contact method.</p>
+          <h3>Submit Requirements</h3>
+          <p>Select your desired cloud provider, credit balance, and submit your inquiry through our simple form or direct desk.</p>
         </div>
 
         <div class="step-card">
           <div class="step-number">2</div>
-          <h3>NDA & Escrow Lock</h3>
-          <p>We execute a mutual legal NDA to protect your identity, then lock buyer funds safely into escrow.</p>
+          <h3>Sign NDA</h3>
+          <p>We execute a mutual legal NDA to protect your identity, terms, and ensure 100% confidentiality before proceeding.</p>
         </div>
 
         <div class="step-card">
           <div class="step-number">3</div>
-          <h3>Secure Transfer</h3>
-          <p>Our team verifies account credentials and facilitates smooth transfer according to provider guidelines.</p>
+          <h3>International Transfer</h3>
+          <p>Make your payment securely via USDT, USDC, or international wire transfer under complete escrow protection.</p>
         </div>
 
         <div class="step-card">
           <div class="step-number">4</div>
-          <h3>Instant Payout</h3>
-          <p>Escrow immediately releases your cash payout via USDT, USDC, or international wire transfer.</p>
+          <h3>Get Full Account Access</h3>
+          <p>Receive complete root/administrator account credentials with verified credits delivered within 24 hours of payment confirmation.</p>
         </div>
       </div>
     </div>
@@ -527,7 +446,7 @@
 
           <!-- Security Action Buttons directly below Workflow Box -->
           <div class="security-actions">
-            <button class="btn btn-primary trigger-sell-modal">Sell Credits &rarr;</button>
+            <button class="btn btn-primary trigger-sell-modal">Buy Credits &rarr;</button>
             <a href="#marketplace" class="btn btn-secondary">Browse Credits</a>
           </div>
         </div>
@@ -556,7 +475,7 @@
               <li>✓ 24h Escrow Settlement</li>
             </ul>
           </div>
-          <button class="btn btn-secondary trigger-sell-modal" style="width:100%;">Submit Credits &rarr;</button>
+          <button class="btn btn-secondary trigger-sell-modal" style="width:100%;">Buy Credits &rarr;</button>
         </div>
 
         <div class="pricing-card featured">
@@ -570,7 +489,7 @@
               <li>✓ Dedicated Deal Manager</li>
             </ul>
           </div>
-          <button class="btn btn-primary trigger-sell-modal" style="width:100%;">Submit Credits &rarr;</button>
+          <button class="btn btn-primary trigger-sell-modal" style="width:100%;">Buy Credits &rarr;</button>
         </div>
 
         <div class="pricing-card">
@@ -584,7 +503,7 @@
               <li>✓ Direct OTC Legal Support</li>
             </ul>
           </div>
-          <button class="btn btn-secondary trigger-sell-modal" style="width:100%;">Submit Credits &rarr;</button>
+          <button class="btn btn-secondary trigger-sell-modal" style="width:100%;">Buy Credits &rarr;</button>
         </div>
       </div>
 
@@ -594,7 +513,7 @@
           <h2>Got unallocated AI computing? Turn them into cash.</h2>
           <p>Join hundreds of founders and developers who liquidated unused cloud credits effortlessly.</p>
         </div>
-        <button class="btn btn-primary trigger-sell-modal" style="background:#FFFFFF; color:var(--text-dark); border-color:#FFFFFF;">Sell Your Credits Now</button>
+        <button class="btn btn-primary trigger-sell-modal" style="background:#FFFFFF; color:var(--text-dark); border-color:#FFFFFF;">Buy Credits</button>
       </div>
     </div>
   </section>
@@ -728,9 +647,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#" class="logo">
-            <div class="logo-icon">C</div>
-            <span>CloudCred</span>
+          <a href="#" class="logo" aria-label="CloudCred Home">
+            <img src="logo-footer.png" alt="CloudCred" class="footer-logo-img">
           </a>
           <p>The leading anonymous, escrow-protected marketplace for buying and selling unallocated AI compute credits.</p>
         </div>
@@ -761,7 +679,7 @@
           <ul>
             <li><a href="https://wa.me/?text=Hi%20CloudCred" target="_blank">WhatsApp Desk</a></li>
             <li><a href="https://t.me/cloudcred" target="_blank">Telegram Support</a></li>
-            <li><a href="#sell" class="trigger-sell-modal">Sell Your Credits</a></li>
+            <li><a href="#marketplace" class="trigger-sell-modal">Buy Credits</a></li>
           </ul>
         </div>
       </div>
@@ -782,8 +700,8 @@
     <div class="modal-dialog">
       <div class="modal-header">
         <div>
-          <div class="modal-subtitle-tag">SELL CREDITS</div>
-          <h2 class="modal-title">Submit your credits</h2>
+          <div class="modal-subtitle-tag">BUY CREDITS</div>
+          <h2 class="modal-title">Buy credits</h2>
         </div>
         <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
       </div>
@@ -800,11 +718,7 @@
         </div>
         <div class="guarantee-item">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          Paid in crypto
-        </div>
-        <div class="guarantee-item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          Escrow-protected
+          Paid in cash
         </div>
       </div>
 
@@ -815,13 +729,7 @@
           <select id="creditProvider" class="form-control" required>
             <option value="" disabled selected>Select provider</option>
             <option value="OpenAI">OpenAI API</option>
-            <option value="AWS Activate">AWS Activate</option>
-            <option value="Anthropic">Anthropic Claude</option>
-            <option value="Google Cloud">Google Cloud (GCP)</option>
-            <option value="Microsoft Azure">Microsoft Founders Hub</option>
-            <option value="RunPod">RunPod / GPU Compute</option>
-            <option value="Lambda Labs">Lambda Labs</option>
-            <option value="Other">Other Provider</option>
+            <option value="AWS Credits">AWS Credits</option>
           </select>
         </div>
 
@@ -879,7 +787,7 @@
           <label for="ndaCheckbox">I'd like a mutual NDA before we proceed</label>
         </div>
 
-        <button type="submit" class="btn-submit-modal">Submit my credits &rarr;</button>
+        <button type="submit" class="btn-submit-modal">Buy Credits &rarr;</button>
 
         <div class="modal-footer-note">
           No commitment required. Your identity and credit details are never shared with AI providers or third parties.

@@ -76,6 +76,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Real-Time 1-Year Expiry Calculation
+  function updateDynamicExpiries() {
+    const now = new Date();
+    const expiryDate = new Date(now.getFullYear() + 1, now.getMonth(), now.getDate());
+    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const formattedExpiry = `${monthNames[expiryDate.getMonth()]} ${expiryDate.getFullYear()}`;
+    
+    document.querySelectorAll('.dynamic-expiry').forEach(el => {
+      el.textContent = formattedExpiry;
+    });
+  }
+
+  updateDynamicExpiries();
+
   // Live Marketplace Search & Category Filter
   const searchInput = document.getElementById('tableSearchInput');
   const tabButtons = document.querySelectorAll('.tab-btn');

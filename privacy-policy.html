@@ -16,29 +16,26 @@
     <div class="container top-bar-content">
       <span class="pulse-dot"></span>
       <span>Over <strong>$4.2M+</strong> in compute credits traded safely with mutual NDA & escrow protection.</span>
-      <a href="#" class="top-bar-btn trigger-sell-modal">Sell Credits &rarr;</a>
+      <a href="index.html#marketplace" class="top-bar-btn trigger-sell-modal">Buy Credits &rarr;</a>
     </div>
   </div>
 
   <!-- Header Navigation -->
   <header class="header">
     <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">C</div>
-        <span>CloudCred</span>
+      <a href="index.html" class="logo" aria-label="CloudCred Home">
+        <img src="logo.png" alt="CloudCred" class="logo-img">
       </a>
 
       <nav class="nav-links">
         <a href="index.html#marketplace">Browse Credits</a>
         <a href="index.html#how-it-works">How It Works</a>
         <a href="index.html#security">Security & NDA</a>
-        <a href="index.html#pricing">Calculators</a>
         <a href="index.html#faq">FAQ</a>
       </nav>
 
       <div class="nav-actions">
-        <button class="btn btn-secondary trigger-sell-modal">Sell Credits</button>
-        <a href="index.html#marketplace" class="btn btn-primary">Browse Marketplace</a>
+        <button class="btn btn-primary trigger-sell-modal">Buy Credits</button>
         <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -58,7 +55,7 @@
     <a href="index.html#pricing">Pricing & Payouts</a>
     <a href="index.html#faq">FAQ</a>
     <a href="index.html#contact">Contact Us</a>
-    <button class="btn btn-primary trigger-sell-modal" style="width: 100%; margin-top: 1rem;">Sell Credits</button>
+    <button class="btn btn-primary trigger-sell-modal" style="width: 100%; margin-top: 1rem;">Buy Credits</button>
   </div>
 
   <!-- Policy Header Hero -->
@@ -151,9 +148,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">C</div>
-            <span>CloudCred</span>
+          <a href="index.html" class="logo" aria-label="CloudCred Home">
+            <img src="logo-footer.png" alt="CloudCred" class="footer-logo-img">
           </a>
           <p>The leading anonymous, escrow-protected marketplace for buying and selling unallocated AI compute credits.</p>
         </div>
@@ -184,7 +180,7 @@
           <ul>
             <li><a href="https://wa.me/?text=Hi%20CloudCred" target="_blank">WhatsApp Desk</a></li>
             <li><a href="https://t.me/cloudcred" target="_blank">Telegram Support</a></li>
-            <li><a href="#" class="trigger-sell-modal">Sell Your Credits</a></li>
+            <li><a href="index.html#marketplace" class="trigger-sell-modal">Buy Credits</a></li>
           </ul>
         </div>
       </div>
@@ -205,8 +201,8 @@
     <div class="modal-dialog">
       <div class="modal-header">
         <div>
-          <div class="modal-subtitle-tag">SELL CREDITS</div>
-          <h2 class="modal-title">Submit your credits</h2>
+          <div class="modal-subtitle-tag">BUY CREDITS</div>
+          <h2 class="modal-title">Buy credits</h2>
         </div>
         <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
       </div>
@@ -222,11 +218,7 @@
         </div>
         <div class="guarantee-item">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          Paid in crypto
-        </div>
-        <div class="guarantee-item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          Escrow-protected
+          Paid in cash
         </div>
       </div>
 
@@ -236,13 +228,7 @@
           <select id="creditProvider" class="form-control" required>
             <option value="" disabled selected>Select provider</option>
             <option value="OpenAI">OpenAI API</option>
-            <option value="AWS Activate">AWS Activate</option>
-            <option value="Anthropic">Anthropic Claude</option>
-            <option value="Google Cloud">Google Cloud (GCP)</option>
-            <option value="Microsoft Azure">Microsoft Founders Hub</option>
-            <option value="RunPod">RunPod / GPU Compute</option>
-            <option value="Lambda Labs">Lambda Labs</option>
-            <option value="Other">Other Provider</option>
+            <option value="AWS Credits">AWS Credits</option>
           </select>
         </div>
 
@@ -300,7 +286,7 @@
           <label for="ndaCheckbox">I'd like a mutual NDA before we proceed</label>
         </div>
 
-        <button type="submit" class="btn-submit-modal">Submit my credits &rarr;</button>
+        <button type="submit" class="btn-submit-modal">Buy Credits &rarr;</button>
 
         <div class="modal-footer-note">
           No commitment required. Your identity and credit details are never shared with AI providers or third parties.
