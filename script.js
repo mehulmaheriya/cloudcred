@@ -1,44 +1,48 @@
-/**
- * CloudCred Marketplace JavaScript
- * Handlers for Modal, Table Search/Filter, FAQ Accordions, Mobile Drawer, Form Email API
- */
+// Global Modal Controls
+function openModal() {
+  const modalBackdrop = document.getElementById('buyModal') || document.getElementById('sellModal');
+  if (modalBackdrop) {
+    modalBackdrop.classList.add('active');
+    modalBackdrop.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeModal() {
+  const modalBackdrop = document.getElementById('buyModal') || document.getElementById('sellModal');
+  if (modalBackdrop) {
+    modalBackdrop.classList.remove('active');
+    modalBackdrop.style.display = '';
+    document.body.style.overflow = 'auto';
+  }
+}
+
+window.openModal = openModal;
+window.closeModal = closeModal;
 
 document.addEventListener('DOMContentLoaded', () => {
   // Target recipient email
   const TARGET_EMAIL = 'twspriyal@gmail.com';
 
   // Modal Controls
-  const modalBackdrop = document.getElementById('buyModal');
+  const modalBackdrop = document.getElementById('buyModal') || document.getElementById('sellModal');
   const modalCloseBtn = document.getElementById('closeModalBtn');
-  const modalForm = document.getElementById('buyCreditForm');
-  const buyCreditTriggers = document.querySelectorAll('.trigger-buy-modal');
+  const modalForm = document.getElementById('buyCreditForm') || document.getElementById('sellCreditForm');
 
-  // Open Modal Function
-  function openModal() {
-    if (modalBackdrop) {
-      modalBackdrop.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-  }
-
-  // Close Modal Function
-  function closeModal() {
-    if (modalBackdrop) {
-      modalBackdrop.classList.remove('active');
-      document.body.style.overflow = 'auto';
-    }
-  }
-
-  // Event listeners for opening modal across all CTA buttons
-  buyCreditTriggers.forEach(btn => {
-    btn.addEventListener('click', (e) => {
+  // Document-level event delegation for opening modal on any matching button or element
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('.trigger-buy-modal, .trigger-sell-modal, [data-modal="buy"]');
+    if (trigger) {
       e.preventDefault();
       openModal();
-    });
+    }
   });
 
   if (modalCloseBtn) {
-    modalCloseBtn.addEventListener('click', closeModal);
+    modalCloseBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeModal();
+    });
   }
 
   // Close when clicking outside modal dialog
@@ -52,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Close modal on Escape key press
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalBackdrop.classList.contains('active')) {
+    if (e.key === 'Escape') {
       closeModal();
     }
   });
