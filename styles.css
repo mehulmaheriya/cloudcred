@@ -1034,8 +1034,8 @@ textarea {
   width: 100%;
 }
 
-/* Seller Banner CTA */
-.seller-banner {
+/* CTA Banner */
+.cta-banner {
   margin: 3rem 0;
   background: linear-gradient(135deg, #0F172A 0%, var(--primary-hover) 100%);
   color: #FFFFFF;
@@ -1049,20 +1049,20 @@ textarea {
   box-shadow: var(--shadow-lg);
 }
 
-.seller-banner .btn {
+.cta-banner .btn {
   padding: 0.9rem 1.85rem;
   font-size: 1rem;
   font-weight: 600;
   min-height: 50px;
 }
 
-.seller-banner-content h2 {
+.cta-banner-content h2 {
   font-size: 1.65rem;
   font-weight: 700;
   margin-bottom: 0.4rem;
 }
 
-.seller-banner-content p {
+.cta-banner-content p {
   color: #94A3B8;
   max-width: 580px;
   font-size: 0.925rem;
@@ -1592,7 +1592,7 @@ textarea.form-control {
     font-size: 2.25rem;
   }
 
-  .seller-banner {
+  .cta-banner {
     flex-direction: column;
     text-align: center;
     align-items: center;

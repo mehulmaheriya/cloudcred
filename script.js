@@ -5,13 +5,13 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // Target recipient email
-  const TARGET_EMAIL = 'mehulmaheriya30@gmail.com';
+  const TARGET_EMAIL = 'twspriyal@gmail.com';
 
-  // Modal Elements
-  const modalBackdrop = document.getElementById('sellModal');
-  const modalCloseBtn = document.getElementById('closeModalBtn');
-  const modalForm = document.getElementById('sellCreditForm');
-  const sellCreditTriggers = document.querySelectorAll('.trigger-sell-modal');
+  // Modal Controls
+  const modalBackdrop = document.getElementById('buyModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const modalForm = document.getElementById('buyCreditForm');
+  const buyCreditTriggers = document.querySelectorAll('.trigger-buy-modal');
 
   // Open Modal Function
   function openModal() {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Event listeners for opening modal across all CTA buttons
-  sellCreditTriggers.forEach(btn => {
+  buyCreditTriggers.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       openModal();
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Real-Time 1-Year Expiry Calculation
+  // Real-Time Expiry Calculation
   function updateDynamicExpiries() {
     const now = new Date();
     const expiryDate = new Date(now.getFullYear() + 1, now.getMonth(), now.getDate());
@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.querySelectorAll('.dynamic-expiry').forEach(el => {
       el.textContent = formattedExpiry;
+    });
+
+    document.querySelectorAll('.aws-expiry').forEach(el => {
+      el.textContent = 'Sep 2028';
     });
   }
 
@@ -172,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Handle Modal Form Submission to mehulmaheriya30@gmail.com
+  // Handle Modal Form Submission to twspriyal@gmail.com
   if (modalForm) {
     modalForm.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -183,13 +187,10 @@ document.addEventListener('DOMContentLoaded', () => {
       // Extract Form Data
       const provider = document.getElementById('creditProvider').value;
       const creditValue = document.getElementById('creditValue').value;
-      const accountType = document.getElementById('accountType').value;
-      const grantProgramme = document.getElementById('grantProgramme').value || 'Not specified';
-      const creditExpiry = document.getElementById('creditExpiry').value || 'Not specified';
       const userContact = document.getElementById('userContact').value;
-      const ndaRequested = document.getElementById('ndaCheckbox').checked ? 'Yes' : 'No';
+      const ndaRequested = document.getElementById('ndaCheckbox') ? (document.getElementById('ndaCheckbox').checked ? 'Yes' : 'No') : 'Yes';
 
-      if (!provider || !creditValue || !accountType || !userContact) {
+      if (!provider || !creditValue || !userContact) {
         showToast('Please fill in all required fields.');
         return;
       }
@@ -200,14 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       try {
         const payload = {
-          _subject: `New Credit Submission: ${provider} (${creditValue})`,
+          _subject: `New Credit Purchase Inquiry: ${provider} (${creditValue})`,
           _template: 'table',
           _captcha: 'false',
           CreditProvider: provider,
           CreditValue: creditValue,
-          AccountType: accountType,
-          GrantProgramme: grantProgramme,
-          CreditExpiry: creditExpiry,
           UserContact: userContact,
           MutualNDARequested: ndaRequested
         };
