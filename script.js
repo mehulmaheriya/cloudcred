@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Modal Controls
   const modalBackdrop = document.getElementById('buyModal');
-  const closeModalBtn = document.getElementById('closeModalBtn');
+  const modalCloseBtn = document.getElementById('closeModalBtn');
   const modalForm = document.getElementById('buyCreditForm');
   const buyCreditTriggers = document.querySelectorAll('.trigger-buy-modal');
 
